@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Question, Tag, Answer, User
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .forms import *
-
 from django.http import HttpResponse, HttpResponseServerError, Http404, HttpResponseRedirect
 from django.template import RequestContext, loader
 from django.contrib.auth import authenticate, login
@@ -17,27 +17,44 @@ def sidebar():
 
 
 def home(request):
-    question_list = Question.objects.get_new()[:20]
+    question_list = Question.objects.get_new()
+    paginator = Paginator(question_list, 20)
+    page = request.GET.get('page')
+    try:
+        questions = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        questions = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        questions = paginator.page(paginator.num_pages)
     extra_context = sidebar()
-    if question_list is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
+    if questions is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
         raise HttpResponseServerError
-    context = {'question_list': question_list, }
+    context = {'questions': questions}
     context.update(extra_context)           # eq add
     return render(request, 'home.html', context)
 
 
 def hot(request):
-    question_list = Question.objects.get_hot()[:20]
+    question_list = Question.objects.get_hot()
+    paginator = Paginator(question_list, 20)
+    page = request.GET.get('page')
+    try:
+        questions = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        questions = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        questions = paginator.page(paginator.num_pages)
     extra_context = sidebar()
-    if question_list is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
+    if questions is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
         raise HttpResponseServerError
-    context = {'question_list': question_list, }
+    context = {'questions': questions}
     context.update(extra_context)           # eq add
+    print(request.path)
     return render(request, 'home.html', context)
-
-
-def new(request):
-    return redirect(request, '')
 
 
 def settings(request, user_id):
@@ -112,7 +129,24 @@ def question(request, question_id):
 
 
 def question_by_tag(request, tag):
-    return render(request, "settings.html")
+    tag = Tag.objects.get_by_tag(tag_name=tag)
+    question_list = Question.objects.get_by_tag_id(tag_id=tag.id)
+    paginator = Paginator(question_list, 20)
+    page = request.GET.get('page')
+    try:
+        questions = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        questions = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        questions = paginator.page(paginator.num_pages)
+    extra_context = sidebar()
+    if questions is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
+        raise HttpResponseServerError
+    context = {'questions': questions}
+    context.update(extra_context)           # eq add
+    return render(request, 'home.html', context)
 
 
 def registration(request):

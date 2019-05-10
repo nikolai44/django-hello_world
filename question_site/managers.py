@@ -11,10 +11,10 @@ class QuestionManager(models.Manager):
     def get_new(self):
         return self.all().order_by('date').reverse()
 
-    def get_by_tag(self, tag_id):
+    def get_by_tag_id(self, tag_id):
         return self.all().filter(tags__id=tag_id)
 
-    def get_by_user(self, user_id):
+    def get_by_user_id(self, user_id):
         return self.all().filter(author__id=user_id)
 
     def get_by_id(self, question_id):
@@ -36,7 +36,7 @@ class AnswerManager(models.Manager):
 class TagManager(models.Manager):
 
     def get_by_tag(self, tag_name):
-        return self.filter(title=tag_name).first()
+        return self.filter(name=tag_name).first()
         # return self.filter(title=tag_name).first().questions.all().order_by('create_date').reverse()
 
     def hottest(self):

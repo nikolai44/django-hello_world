@@ -2,22 +2,28 @@
 {% load static %}
 {% block content %}
     <div class="container question_container">
-        <div class="row align-items-center">
-            <div class="col-2"></div>
-            <div class="col-md-4 my-md-2">
-                <h2>New question</h2>
+        {% if request.path == 'hot' %}
+            <div class="row align-items-center">
+                <div class="col-2"></div>
+                <div class="col-md-4 my-md-2">
+                    <h2>New question</h2>
+                </div>
             </div>
-            <div class="col-md-4 my-md-2">
-                <a href="{% url 'hot' %}"> <h4>Hot questions</h4></a>
+        {% else %}
+            <div class="row align-items-center">
+                <div class="col-2"></div>
+                <div class="col-md-4 my-md-2">
+                    <h2>Hot question</h2>
+                </div>
             </div>
-        </div>
+        {% endif %}
         <div class="col-12">
-            {% for question in question_list %}
+            {% for question in questions %}
                 <div class="mx-auto" style="width: 700px;">
                     <div class="row question">
                         <div class="col-2 question_parent">
                             <div class="row">
-                                <img src={% static "img/Logo.png" %} >
+                                <img src="{{ question.user.avatar.url }}">
                             </div>
                             <div class="row question_child align-items-center mx-auto">
                                 <button>
@@ -40,7 +46,7 @@
                             </div>
                             <div class="row question_child">
                                 <div class="col">
-                                    <h6>  answers({{ question.answers.all|length }})  </h6>
+                                    <h6>  answers(??)  </h6>
                                 </div>
                                 <div class="col">
                                     Tags:
@@ -55,6 +61,37 @@
                     </div>
                 </div>
             {% endfor %}
+
+            <nav>
+              {% if questions.has_other_pages %}
+              <ul class="pagination justify-content-center">
+                {% if questions.has_previous %}
+                  <li><a class="page-link" href="?page={{ questions.previous_page_number }}">&laquo;</a></li>
+                {% else %}
+                  <li class="disabled page-link"><span>&laquo;</span></li>
+                {% endif %}
+                {% for i in questions.paginator.page_range %}
+                  {% if i > questions.number|add:"-5" and i < questions.number|add:"5" %}
+                      {% if questions.number == i %}
+                        <li class="page-item active">
+                          <span class="page-link">
+                            {{ i }}
+                            <span class="sr-only">(current)</span>
+                          </span>
+                        </li>
+                      {% else %}
+                        <li><a class="page-link" href="?page={{ i }}">{{ i }}</a></li>
+                      {% endif %}
+                  {% endif %}
+                {% endfor %}
+                {% if questions.has_next %}
+                  <li><a class="page-link" href="?page={{ questions.next_page_number }}">&raquo;</a></li>
+                {% else %}
+                  <li class="disabled page-link"><span>&raquo;</span></li>
+                {% endif %}
+              </ul>
+            {% endif %}
+            </nav>
         </div>
     </div>
 {% endblock %}

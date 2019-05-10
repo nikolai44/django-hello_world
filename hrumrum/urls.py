@@ -25,9 +25,9 @@ urlpatterns = [
 
     path('', views.home, name="home"),
 
-    path('hot', views.new, name="hot"),
+    path('hot', views.hot, name="hot"),
 
-    path('new', views.hot, name="new"),
+    path('new', views.home, name="new"),
 
     path('add/question', views.new_question, name="new_question"),
 
