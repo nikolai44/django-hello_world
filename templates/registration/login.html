@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+    <div class="row">
+      <div class="col-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h5 class="card-title text-center">Sign In</h5>
+            <form id="login-form" method="post" action="{% url 'login' %}">
+              {% csrf_token %}
+              <div class="form-label-group row mt-4 align-items-center">
+                  <div class="col-3">
+                      <label for="id_username">Username</label>
+                  </div>
+                  <div class="col-9">
+                      <input id="id_username" name="username" type="text" class="form-control" placeholder="Username" required autofocus>
+                  </div>
+              </div>
+
+              <div class="form-label-group row mt-4 align-items-center">
+                  <div class="col-3">
+                      <label for="id_password">Password</label>
+                  </div>
+                  <div class="col-9">
+                      <input id="id_password" name="password" type="password" class="form-control" placeholder="Password" required>
+                  </div>
+              </div>
+
+              {% if form.errors %}
+                <p class=" label text-danger">
+                    Your username and password didn't match.
+                    Please try again.
+                </p>
+              {% endif %}
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase mt-4" type="submit" value="Login">Log in</button>
+            </form>
+            <hr class="my-4">
+              <a href="{% url 'registration' %}">Create account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

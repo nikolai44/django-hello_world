@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div class="col-8 mx-auto">
+        <h2> Add new question</h2>
+        <form id="add_question-form" method="post" action="{% url 'new_question' %}">
+             {% csrf_token %}
+             {{form}}
+             <button class="btn btn-lg btn-primary btn-block text-uppercase mt-4" type="submit" value="add">Add</button>
+         </form>
+    </div>
+</div>
+{% endblock %}

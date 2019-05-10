@@ -1,0 +1,42 @@
+{% block navbar %}
+{% load static %}
+
+   <div class="col-12 d-flex flex-column flex-md-row align-items-center p-1 px-md-4 mb-5 bg-white border-bottom shadow-lg">
+       <div class="container border col-10 mx-auto row">
+        <h1 class="col-2 my-0 font-weight-normal border">
+            <a href="{% url 'home' %}">Mrrrr</a>
+        </h1>
+        <div class="col-4">
+            <form class="form-inline my-3 border">
+                <input class="form-control mr-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-0" type="submit">Поиск</button>
+            </form>
+        </div>
+        <div class="col-2 border>">
+            <nav class="my-2 border">
+                <a class="btn btn-outline-dark btn-lg" href="{% url 'new_question' %}" role="button">Задать вопрос</a>
+            </nav>
+        </div>
+        {% if user.is_authenticated %}
+            <div class="col-2 left_line border">
+                <div class="user">
+                  <img src="{{ user.avatar.url }}">
+                </div>
+            </div>
+            <div class="col-1 border">
+                <a class="btn btn-lg my-2"
+                   href="{% url 'settings' user.username %}"><h6>{{ user.username }}</h6></a>
+            </div>
+            <div class="col-1 border">
+                <a class="btn btn-outline-primary btn-lg my-2"
+                   href="{% url 'logout' %}"><h6>Log out</h6></a>
+            </div>
+        {% else %}
+           <div class="col-2"></div>
+            <a class="col-1 btn btn-outline-primary btn-lg my-3" href="{% url 'login' %}"><h6>Log in</h6></a>
+            <a class="col-1 btn btn-outline-primary btn-lg my-3" href="{% url 'registration' %}"><h6>Sign up</h6></a>
+        {% endif %}
+         </div>
+    </div>
+
+{% endblock %}
