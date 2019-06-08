@@ -10,7 +10,7 @@ from django.contrib.auth import authenticate, login
 
 
 def sidebar():
-    tag_list = Tag.objects.hottest()[:10]
+    tag_list = Tag.objects.hottest()[:20]
     user_list = User.objects.by_rating()[:10]
     return {'tag_list': tag_list,
             'user_list': user_list}

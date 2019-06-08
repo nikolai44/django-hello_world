@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <th scope="row">Avatar</th>
-            <td><img class="user" src="{{profile.avatar.url}}" alt="">
+            <td><img class="user" src="{{ profile.avatar.url }}" alt="">
                 <input type="file" class="form-control-file" name="avatar">
             </td>
         </tr>
@@ -33,8 +33,7 @@
         </tr>
         </tbody>
     </table>
-{% endif %}
-{% if not user.is_authenticated or user.id != profile.id %}
+{% else %}
     <h2> Access error </h2>
 {% endif %}
 

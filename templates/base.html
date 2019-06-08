@@ -28,7 +28,7 @@
                 <h2>Best members</h2>
                 {% for user in user_list %}
                     <div>
-                        <a href="settings/{{user.get_username}}">{{user.get_username}}</a>
+                        <a href="/settings/{{user.get_username}}">{{user.get_username}}</a>
                     </div>
                 {% endfor %}
             </div>
