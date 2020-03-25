@@ -33,6 +33,10 @@ def home(request):
         raise HttpResponseServerError
     context = {'questions': questions}
     context.update(extra_context)           # eq add
+    answer_nums = []
+    for question in questions:
+        count = Answer.objects.all().filter(question=question.id).count()
+        print(count)
     return render(request, 'home.html', context)
 
 

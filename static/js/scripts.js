@@ -1,12 +1,6 @@
-$.ajax({
-    url: '/blog/comments/add/',
-    type: 'POST',
-    data: { post_id: 12, text: 'Занятная идея!' },
-}).success(function(data) {
-    if (data.status == 'ok') {
-        console.log(data.comment_id);
-    }
-}).error(function() {
-    console.log('http error')
-});
-
+function myFunction() {
+	var request = new XMLHttpRequest();
+	request.open('POST', '/api/', true);
+	request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+	request.send(data);
+}
