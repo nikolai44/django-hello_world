@@ -16,12 +16,12 @@
                             <img src="{{ question.author.avatar.url }}" alt="avatar">
                         </div>
                         <div class="row question_child align-items-center mx-auto">
-                            <button onclick="upvote()">
+                            <button id="like">
                                 <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
                                     <path d="M2 26h32L18 10z"></path></svg>
                             </button>
                             {{ question.votes }}
-                            <button>
+                            <button id="dislike">
                                 <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
                                     <path d="M2 10h32L18 26z"></path></svg>
                             </button>
@@ -56,10 +56,14 @@
                                 <img src={% static "img/Logo.png" %}  alt="avatar">
                             </div>
                             <div class="row question_child align-items-center mx-auto">
-                                <button>
-                                    <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
-                                        <path d="M2 26h32L18 10z"></path></svg>
-                                </button>
+                                <form action="{% url 'vote' answer.id %}" method="POST">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="next" value="{{ request.path }}">
+                                    <button data-toggle="tooltip">
+                                        <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
+                                            <path d="M2 26h32L18 10z"></path></svg>
+                                    </button>
+                                </form>
                                 {{ answer.votes }}
                                 <button>
                                     <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
@@ -88,4 +92,11 @@
             </div>
         </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
 {% endblock %}

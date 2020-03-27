@@ -202,8 +202,7 @@ def add_avatar(request):
         return redirect("/accounts/login")
 
 
-def vote(request):
-    # request should be ajax and method should be POST.
+def vote(request, question_id):
     if request.is_ajax and request.method == "POST":
         pass
 
