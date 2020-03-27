@@ -33,6 +33,8 @@ urlpatterns = [
 
     path('question/<int:question_id>', views.question, name="question"),
 
+    path('question/<int:question_id>/vote', views.vote, name="vote"),
+
     path('question', views.question, name="question"),
 
     path('tag/<str:tag>', views.question_by_tag, name="question_by_tag"),
@@ -45,6 +47,8 @@ urlpatterns = [
         extra_context=views.sidebar(), redirect_authenticated_user=True), name="login"),          # redirect_authenticated_user - if logged in redirect to homepage
 
     path('accounts/logout', auth_views.LogoutView.as_view(), name="logout"),
+
+    path('accounts/add/avatar', views.add_avatar, name="add_avatar"),
 
     path('accounts/', include('django.contrib.auth.urls')),
 ]

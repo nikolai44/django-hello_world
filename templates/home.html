@@ -21,19 +21,7 @@
                             </div>
                             <div class="row question_child align-items-center mx-auto">
 
-                                <button id="like" data-catid="{{question.id}}" class="btn btn-primary" type="button">
-                                    <span class="glyphicon glyphicon-thumbs-up"></span>
-                                    <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
-                                        <path d="M2 26h32L18 10z"></path></svg>
-                                </button>
-
-                                <strong id="like_count">{{ question.votes }}</strong>
-
-                                <button id="dislike" data-catid="{{question.id}}" class="btn btn-primary" type="button">
-                                    <span class="glyphicon glyphicon-thumbs-up"></span>
-                                    <svg aria-hidden="true" class="svg-icon" width="10" height="10" viewBox="0 0 36 36">
-                                        <path d="M2 10h32L18 26z"></path></svg>
-                                </button>
+                                <strong id="like_count">Likes: {{ question.votes }}</strong>
                             </div>
                         </div>
                         <div class="col-9">

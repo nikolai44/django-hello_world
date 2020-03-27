@@ -118,3 +118,14 @@ class AddAnswerForm(forms.ModelForm):
     class Meta:
         model = Question
         fields = ['text']
+
+
+class AddAvatarForm(forms.ModelForm):
+    avatar = forms.ImageField(label="Photo")
+
+    def clean(self):
+        return self.cleaned_data
+
+    class Meta:
+        model = Question
+        fields = ['avatar']

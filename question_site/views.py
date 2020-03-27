@@ -2,7 +2,8 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Question, Tag, Answer, User
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from .forms import *
-from django.http import HttpResponse, HttpResponseServerError, Http404, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseServerError, Http404, HttpResponseRedirect,\
+    JsonResponse
 from django.template import RequestContext, loader
 from django.contrib.auth import authenticate, login
 
@@ -184,3 +185,27 @@ def registration(request):
         context.update(extra_context)           # eq add
         return render(request, template_name="registration/registration_form.html", context=context)
 
+
+def add_avatar(request):
+    if request.user.is_authenticated:
+        if request.method == "POST":
+            form = AddAvatarForm(request.POST, request.FILES)
+            if form.is_valid():
+                user = User.objects.get(username=request.user)
+                user.avatar = form.cleaned_data['avatar']
+                user.save()
+        context = {"profile": request.user}
+        extra_context = sidebar()
+        context.update(extra_context)
+        return render(request, "settings.html", context)
+    else:
+        return redirect("/accounts/login")
+
+
+def vote(request):
+    # request should be ajax and method should be POST.
+    if request.is_ajax and request.method == "POST":
+        pass
+
+
+    return JsonResponse({"error": ""}, status=400)

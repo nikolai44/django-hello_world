@@ -2,123 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28460043-1eb7-427a-b3aa-14a981126940" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hrumrum.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hrumrum.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hrumrum/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/hrumrum/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question_site/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/question_site/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/question_site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/question_site/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/settings.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="question_site_user: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/navbar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hrumrum/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2210">
-              <caret line="130" selection-start-line="130" selection-end-line="131" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/question_site/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2533">
-              <caret line="155" column="16" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="16" />
-              <folding>
-                <marker date="1557991387508" expanded="true" signature="429:432" ph="..." />
-                <marker date="1557991387508" expanded="true" signature="446:607" ph="..." />
-                <marker date="1557991387508" expanded="true" signature="1342:1347" ph="..." />
-                <marker date="1557991387508" expanded="true" signature="2419:2424" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/registration/registration_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/settings.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/question_site/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/add_question.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="10" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/question_site/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1598">
-              <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1557497724027" expanded="true" signature="3027:3032" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,109 +69,22 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>STATIC</find>
-      <find>border</find>
-      <find>Logo.png</find>
-      <find>date</find>
-      <find>crea</find>
-      <find>create</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/question_site/templates/core/home.html" />
-        <option value="$PROJECT_DIR$/templates/sidebar.html" />
-        <option value="$PROJECT_DIR$/templates/question_block.py" />
-        <option value="$PROJECT_DIR$/templates/qustion_block.html" />
-        <option value="$PROJECT_DIR$/templates/signin.html" />
-        <option value="$PROJECT_DIR$/templates/paginator.html" />
-        <option value="$PROJECT_DIR$/templates/register.html" />
-        <option value="$PROJECT_DIR$/question_site/migrations/managers.py" />
-        <option value="$PROJECT_DIR$/fill_db.py" />
-        <option value="$PROJECT_DIR$/templates/profile.html" />
-        <option value="$PROJECT_DIR$/static/css/login.css" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/templates/registration/login.html" />
-        <option value="$PROJECT_DIR$/hrumrum/settings.py" />
-        <option value="$PROJECT_DIR$/templates/registration/registration_form.html" />
-        <option value="$PROJECT_DIR$/templates/add_question" />
-        <option value="$PROJECT_DIR$/templates/ask.html" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/test.py" />
-        <option value="$PROJECT_DIR$/templates/navbar.html" />
-        <option value="$PROJECT_DIR$/question_site/models.py" />
-        <option value="$PROJECT_DIR$/templates/add_question.html" />
-        <option value="$PROJECT_DIR$/static/css/my_css.css" />
-        <option value="$PROJECT_DIR$/question_site/forms.py" />
-        <option value="$PROJECT_DIR$/templates/question.html" />
-        <option value="$USER_HOME$/PycharmProjects/learn1/bandleader.py" />
-        <option value="$PROJECT_DIR$/hrumrum/urls.py" />
-        <option value="$PROJECT_DIR$/question_site/managers.py" />
-        <option value="$PROJECT_DIR$/static/js/scripts.js" />
-        <option value="$PROJECT_DIR$/templates/home.html" />
-        <option value="$PROJECT_DIR$/question_site/views.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/settings.html" />
-      </list>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="255" />
-    <option name="y" value="16" />
-    <option name="width" value="1025" />
-    <option name="height" value="1040" />
-  </component>
+  <component name="ProjectId" id="1ZOcpMrCIKQMvKsIbs3ZScAtduv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hrumrum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrumrum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrumrum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrumrum" type="462c0819:PsiDirectoryNode" />
-              <item name="question_site" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrumrum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrumrum" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrumrum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hrumrum" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hrumrum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="hrumrum" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Course" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -238,33 +92,29 @@
     <property name="SearchEverywhereHistoryKey" value="cre&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop-1.9.1-1.9.2-checkout" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/img" />
+      <recent name="C:\Users\Я\Desktop\WEB\hrumrum\static\js" />
+      <recent name="C:\Users\Я\Desktop\WEB\hrumrum\static\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Я\Desktop\WEB\hrumrum\templates\registration" />
       <recent name="C:\Users\Я\Desktop\WEB\hrumrum\templates\register" />
       <recent name="C:\Users\Я\Desktop\WEB\hrumrum\static\css" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Я\Desktop\WEB\hrumrum\static\js" />
-      <recent name="C:\Users\Я\Desktop\WEB\hrumrum\static\css" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Python.bandleader">
+  <component name="RunManager" selected="Django server.question_site">
     <configuration name="bandleader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="hrumrum" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -273,12 +123,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/learn1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../learn1" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/learn1/bandleader.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../learn1/bandleader.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -301,6 +151,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/fill_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scratch" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="hrumrum" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/scratch.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,14 +225,64 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <module name="hrumrum" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="question_site" type="Python.DjangoServer" factoryName="Django server">
+      <module name="hrumrum" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="hrumrum.settings" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Django server.question_site" />
       <item itemvalue="Python.fill_db" />
       <item itemvalue="Python.scratch_2" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.bandleader" />
+      <item itemvalue="Python.scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.scratch" />
         <item itemvalue="Python.bandleader" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.scratch_2" />
@@ -380,6 +302,11 @@
       <updated>1560013595103</updated>
       <workItem from="1560013619464" duration="1148000" />
       <workItem from="1560022331033" duration="1603000" />
+      <workItem from="1584713784476" duration="24475000" />
+      <workItem from="1585130162306" duration="4196000" />
+      <workItem from="1585161289684" duration="227000" />
+      <workItem from="1585212029566" duration="3299000" />
+      <workItem from="1585222209991" duration="20643000" />
     </task>
     <task id="LOCAL-00001" summary="final project commit">
       <created>1560024946526</created>
@@ -388,11 +315,22 @@
       <option name="project" value="LOCAL" />
       <updated>1560024946526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix static paths and add answers counter">
+      <created>1585146898306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585146898306</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix tags">
+      <created>1585308907926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585308907926</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2751000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,48 +341,6 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.117962465" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.5685997" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49932975" visible="true" weight="0.5685997" />
-      <window_info anchor="bottom" id="Python Console" order="0" weight="0.32956153" />
-      <window_info anchor="bottom" id="Version Control" order="1" sideWeight="0.49932975" weight="0.32956153" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.39373296" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.15258856" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" weight="0.24045262" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19233312" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="1" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.39373296" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.15258856" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -454,20 +350,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -476,209 +359,125 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="final project commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="final project commit" />
+    <MESSAGE value="fix static paths and add answers counter" />
+    <MESSAGE value="fix tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tags" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/question_site/templates/core/home.html" />
-    <entry file="file://$PROJECT_DIR$/templates/question_block.py" />
-    <entry file="file://$PROJECT_DIR$/templates/signin.html" />
-    <entry file="file://$PROJECT_DIR$/templates/paginator.html" />
-    <entry file="file://$PROJECT_DIR$/templates/register.html" />
-    <entry file="file://$PROJECT_DIR$/question_site/migrations/managers.py" />
-    <entry file="file://$PROJECT_DIR$/templates/qustion_block.html" />
-    <entry file="file://$PROJECT_DIR$/question_site/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/profile.html" />
-    <entry file="file://$PROJECT_DIR$/static/css/login.css" />
-    <entry file="file://$PROJECT_DIR$/templates/sidebar.html" />
-    <entry file="file://$PROJECT_DIR$/../../WEB_TP-master/Forumrum/templates/answers.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../WEB_TP-master/Forumrum/templates/tmp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../WEB_TP-master/Forumrum/templates/card.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../WEB_TP-master/Forumrum/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_question" />
-    <entry file="file://$PROJECT_DIR$/templates/ask.html" />
-    <entry file="file://$PROJECT_DIR$/../../WEB_TP-master/Forumrum/templates/new_question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/test.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/PycharmProjects/learn1/bandleader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="41" column="47" lean-forward="true" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fill_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="32" column="95" lean-forward="true" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/my_css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python/Scripts/django-admin.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/question_site/managers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrumrum/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hrumrum/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2210">
-          <caret line="130" selection-start-line="130" selection-end-line="131" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/question_site/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2533">
-          <caret line="155" column="16" selection-start-line="155" selection-start-column="12" selection-end-line="155" selection-end-column="16" />
-          <folding>
-            <marker date="1557991387508" expanded="true" signature="429:432" ph="..." />
-            <marker date="1557991387508" expanded="true" signature="446:607" ph="..." />
-            <marker date="1557991387508" expanded="true" signature="1342:1347" ph="..." />
-            <marker date="1557991387508" expanded="true" signature="2419:2424" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/registration_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/settings.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_question.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/question_site/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1598">
-          <caret line="98" column="29" selection-start-line="98" selection-start-column="29" selection-end-line="98" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1557497724027" expanded="true" signature="3027:3032" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/question_site/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="135" y="620" width="800" height="677" key="#JavaScript" timestamp="1585141156968">
+      <screen x="0" y="867" width="1080" height="996" />
+    </state>
+    <state x="135" y="620" width="800" height="677" key="#JavaScript/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585141156968" />
+    <state x="120" y="526" width="800" height="677" key="#Python" timestamp="1584903597094">
+      <screen x="0" y="526" width="1050" height="1680" />
+    </state>
+    <state x="120" y="526" width="800" height="677" key="#Python/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584903597094" />
+    <state x="0" y="1023" width="1050" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584718077411">
+      <screen x="0" y="526" width="1050" height="1680" />
+    </state>
+    <state x="0" y="1023" width="1050" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584718077411" />
+    <state x="102" y="535" width="866" height="847" key="CommitChangelistDialog2" timestamp="1585308907652">
+      <screen x="0" y="867" width="1080" height="996" />
+    </state>
+    <state x="102" y="535" width="866" height="847" key="CommitChangelistDialog2/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585308907652" />
+    <state x="262" y="1139" width="515" height="451" key="EnvironmentVariablesDialog" timestamp="1584715910098">
+      <screen x="0" y="526" width="1050" height="1680" />
+    </state>
+    <state x="262" y="1139" width="515" height="451" key="EnvironmentVariablesDialog/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584715910098" />
+    <state x="317" y="1235" width="424" height="484" key="FileChooserDialogImpl" timestamp="1585146418446">
+      <screen x="0" y="867" width="1080" height="996" />
+    </state>
+    <state x="308" y="1147" width="424" height="484" key="FileChooserDialogImpl/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584715887057" />
+    <state x="317" y="1235" key="FileChooserDialogImpl/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585146418446" />
+    <state width="1034" height="499" key="GridCell.Tab.0.bottom" timestamp="1585341400799">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.0.bottom/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412683" />
+    <state width="1034" height="499" key="GridCell.Tab.0.bottom/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585341400799" />
+    <state width="1034" height="545" key="GridCell.Tab.0.bottom/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317307184" />
+    <state width="1034" height="185" key="GridCell.Tab.0.bottom/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585312331855" />
+    <state width="1034" height="499" key="GridCell.Tab.0.center" timestamp="1585341400799">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.0.center/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412683" />
+    <state width="1034" height="499" key="GridCell.Tab.0.center/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585341400799" />
+    <state width="1034" height="545" key="GridCell.Tab.0.center/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317307183" />
+    <state width="1034" height="185" key="GridCell.Tab.0.center/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585312331855" />
+    <state width="1034" height="499" key="GridCell.Tab.0.left" timestamp="1585341400799">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.0.left/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412683" />
+    <state width="1034" height="499" key="GridCell.Tab.0.left/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585341400799" />
+    <state width="1034" height="545" key="GridCell.Tab.0.left/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317307183" />
+    <state width="1034" height="185" key="GridCell.Tab.0.left/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585312331855" />
+    <state width="1034" height="499" key="GridCell.Tab.0.right" timestamp="1585341400799">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.0.right/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412683" />
+    <state width="1034" height="499" key="GridCell.Tab.0.right/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585341400799" />
+    <state width="1034" height="545" key="GridCell.Tab.0.right/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317307184" />
+    <state width="1034" height="185" key="GridCell.Tab.0.right/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585312331855" />
+    <state width="1034" height="499" key="GridCell.Tab.1.bottom" timestamp="1585331466114">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.1.bottom/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412684" />
+    <state width="1034" height="499" key="GridCell.Tab.1.bottom/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585331466114" />
+    <state width="1034" height="545" key="GridCell.Tab.1.bottom/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317338566" />
+    <state width="1034" height="499" key="GridCell.Tab.1.center" timestamp="1585331466114">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.1.center/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412684" />
+    <state width="1034" height="499" key="GridCell.Tab.1.center/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585331466114" />
+    <state width="1034" height="545" key="GridCell.Tab.1.center/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317338566" />
+    <state width="1034" height="499" key="GridCell.Tab.1.left" timestamp="1585331466114">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.1.left/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412683" />
+    <state width="1034" height="499" key="GridCell.Tab.1.left/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585331466114" />
+    <state width="1034" height="545" key="GridCell.Tab.1.left/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317338566" />
+    <state width="1034" height="499" key="GridCell.Tab.1.right" timestamp="1585331466114">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state width="1004" height="471" key="GridCell.Tab.1.right/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584908412684" />
+    <state width="1034" height="499" key="GridCell.Tab.1.right/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585331466114" />
+    <state width="1034" height="545" key="GridCell.Tab.1.right/1080.840.1920.1080/0.246.1080.966@0.246.1080.966" timestamp="1585317338566" />
+    <state x="14" y="1000" key="SettingsEditor" timestamp="1584715915044">
+      <screen x="0" y="526" width="1050" height="1680" />
+    </state>
+    <state x="14" y="1000" key="SettingsEditor/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584715915044" />
+    <state x="1742" y="348" width="524" height="384" key="com.intellij.database.dbimport.ImportUtil.MyDialog" timestamp="1584719319430">
+      <screen x="1050" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1742" y="348" width="524" height="384" key="com.intellij.database.dbimport.ImportUtil.MyDialog/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584719319430" />
+    <state x="0" y="1105" width="1080" height="1080" key="dock-window-1" timestamp="1585130306079">
+      <screen x="0" y="867" width="1080" height="996" />
+    </state>
+    <state x="1050" y="0" width="1296" height="1080" key="dock-window-1/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584886790249" />
+    <state x="0" y="0" width="1080" height="1080" key="dock-window-1/1050.1080.1920.1080/1050.0.1920.1080/0.867.1050.996@1050.1080.1920.1080" timestamp="1585071121312" />
+    <state x="0" y="1105" width="1080" height="1080" key="dock-window-1/1080.840.1920.1080/0.867.1080.996@0.867.1080.996" timestamp="1585130306079" />
+    <state x="123" y="396" width="863" height="1317" key="find.popup" timestamp="1585323073245">
+      <screen x="0" y="246" width="1080" height="1617" />
+    </state>
+    <state x="1269" y="100" width="863" height="879" key="find.popup/1050.1080.1920.1080/1050.0.1920.1080/0.526.1050.1680@0.526.1050.1680" timestamp="1584716663149" />
+    <state x="123" y="396" width="863" height="1317" key="find.popup/1080.840.1920.1080/0.246.1080.1617@0.246.1080.1617" timestamp="1585323073245" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/question_site/views.py</url>
+          <line>207</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/django_hello_world$scratch.coverage" NAME="scratch Coverage Results" MODIFIED="1584908412664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
   </component>
 </project>
