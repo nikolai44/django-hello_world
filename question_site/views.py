@@ -31,12 +31,13 @@ def home(request):
     extra_context = sidebar()
     if questions is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
         raise HttpResponseServerError
-    context = {'questions': questions}
+    qcount = Question.objects.count()
+    anscount = Answer.objects.all().count()
+    context = dict()
+    context['questions'] = questions
+    context['qcount'] = qcount
+    context['anscount'] = anscount
     context.update(extra_context)           # eq add
-    answer_nums = []
-    for question in questions:
-        count = Answer.objects.all().filter(question=question.id).count()
-        print(count)
     return render(request, 'home.html', context)
 
 

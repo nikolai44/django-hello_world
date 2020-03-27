@@ -20,12 +20,18 @@
             {% block content %}{% endblock %}
         </div>
         <div class="col-4">
-            <div class="">
-                <h2>Popular tags</h2>
+            <div class="border">
+                <div class="">
+                    <h4>Total Questions: {{ qcount }}</h4>
+                    <h4>Total Answers: {{ anscount }}</h4>
+                </div>
+            </div>
+            <div class="border">
+                <h4>Popular tags</h4>
                 {% for tag in tag_list %}
-                    <a href="tag/{{tag.name}}">{{tag.name}}</a>
+                    <a href="/tag/{{tag.name}}">{{tag.name}}</a>
                 {% endfor %}
-                <h2>Best members</h2>
+                <h4>Best members</h4>
                 {% for user in user_list %}
                     <div>
                         <a href="/settings/{{user.get_username}}">{{user.get_username}}</a>
