@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Question, Tag, Answer, User
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.db.models import Count
 from .forms import *
 from django.http import HttpResponse, HttpResponseServerError, Http404, HttpResponseRedirect,\
     JsonResponse
@@ -24,10 +25,8 @@ def home(request):
     try:
         questions = paginator.page(page)
     except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
         questions = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
         questions = paginator.page(paginator.num_pages)
     extra_context = sidebar()
     if questions is None or extra_context['user_list'] is None or extra_context['tag_list'] is None:
@@ -38,7 +37,7 @@ def home(request):
     context['questions'] = questions
     context['qcount'] = qcount
     context['anscount'] = anscount
-    context.update(extra_context)           # eq add
+    context.update(extra_context)
     return render(request, 'home.html', context)
 
 
@@ -123,9 +122,13 @@ def question(request, question_id):
         else:
             answers = Answer.objects.get_for_answer(question_id)
             form = AddAnswerForm()
+            q_tags_ids = q.tags.values_list('id', flat=True)
+            similar_qs = Question.objects.filter(tags__in=q_tags_ids).exclude(id=question_id)
+            similar_qs = similar_qs.annotate(same_tags=Count('tags')).order_by('-same_tags', '-date')[:4]
             context = {"question": q,
                        "answers": answers,
                        "form": form,
+                       "similar_qs": similar_qs,
                        }
             extra_context = sidebar()
             context.update(extra_context)
@@ -205,6 +208,5 @@ def add_avatar(request):
 def vote(request, question_id):
     if request.is_ajax and request.method == "POST":
         pass
-
 
     return JsonResponse({"error": ""}, status=400)

@@ -89,6 +89,19 @@
                      {{form.text}}
                      <button class="btn btn-lg btn-primary btn-block text-uppercase mt-2 col-4" type="submit" value="add">Add</button>
                  </form>
+                <hr style="width: 100%; color: gray; height: 1px; background-color:gray;" />
+                <div>
+                    <h4>Похожие вопросы:</h4>
+                    {% if similar_qs %}
+                        {% for question in similar_qs %}
+                            <div>
+                                <a href="{% url 'question' %}/{{ question.id }}">{{ question.title }}</a>
+                            </div>
+                        {% endfor %}
+                    {% else %}
+                        <p>Нет вопросов с подобными тегами</p>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>

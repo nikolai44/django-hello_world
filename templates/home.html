@@ -36,12 +36,7 @@
                                     <h6>  answers({{ question.answer_set.all|length }})  </h6>
                                 </div>
                                 <div class="col">
-                                    Tags:
-                                    {% for tag in question.tags.all %}
-                                        <div class="col">
-                                            {{tag}}
-                                        </div>
-                                    {% endfor %}
+                                    <p>Tags: {{ question.tags.all|join:", " }}</p>
                                 </div>
                             </div>
                         </div>
