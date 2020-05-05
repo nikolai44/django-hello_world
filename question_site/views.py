@@ -3,12 +3,9 @@ from .models import Question, Tag, Answer, User
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.db.models import Count
 from .forms import *
-from django.http import HttpResponse, HttpResponseServerError, Http404, HttpResponseRedirect,\
-    JsonResponse
-from django.template import RequestContext, loader
+from django.http import HttpResponse, HttpResponseServerError, Http404, JsonResponse
 from django.contrib.auth import authenticate, login
-
-# Create your views here.
+from django.contrib.postgres.search import SearchVector
 
 
 def sidebar():
@@ -210,3 +207,17 @@ def vote(request, question_id):
         pass
 
     return JsonResponse({"error": ""}, status=400)
+
+
+def search(request):
+    form = SearchForm(request.GET)
+    if form.is_valid():
+        query = form.cleaned_data['query']
+        context = dict()
+        context['questions'] = Question.objects.annotate(
+            search=SearchVector('title', 'text')
+        ).filter(search=query)
+        context.update(sidebar())
+        return render(request, 'home.html', context)
+    else:
+        return JsonResponse({"error": form.errors}, status=400)

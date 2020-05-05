@@ -129,3 +129,7 @@ class AddAvatarForm(forms.ModelForm):
     class Meta:
         model = Question
         fields = ['avatar']
+
+
+class SearchForm(forms.Form):
+    query = forms.CharField(max_length=30, required=True)

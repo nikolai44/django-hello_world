@@ -51,6 +51,8 @@ urlpatterns = [
     path('accounts/add/avatar', views.add_avatar, name="add_avatar"),
 
     path('accounts/', include('django.contrib.auth.urls')),
+
+    path('search/', views.search, name="search"),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
